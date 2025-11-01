@@ -1,0 +1,490 @@
+body {
+    background-color: rgb(41,42,46);
+    color: #EEEEEE;
+}
+
+.main {
+    text-align: center;
+}
+
+.buttons {
+    padding: 10px 0;
+}
+
+.buttons div {
+    padding: 20px 0;
+}
+
+.buttons a {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 17px 107px;
+    font-size: 20px;
+}
+
+.buttons .save {
+    background-color: #EE514A;
+}
+
+.page-header {
+    border: none;
+}
+
+#geolocation {
+    background-color: rgb(41,42,46);
+    color: #EEEEEE;
+    margin: 0 auto;
+    max-width: 275px;
+}
+
+.page-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.bluetooth-label {
+    margin-bottom: 5px;
+}
+
+.geolocation-container {
+    padding: 0 10px;
+}
+
+.btn-group button {
+    background-color: rgb(41,42,46);
+    border: 1px solid #ccc;
+    color: #EEEEEE;
+}
+
+.btn-group .active {
+    background-color: #EEEEEE;
+    color: rgb(41,42,46);
+}
+
+.geolocation-container label, .div-label {
+    font-weight: 400;
+}
+
+.geolocation-container .page-header {
+    margin-top: 0;
+}
+
+.donate-container {
+    padding: 10px 0;
+}
+
+.div-label {
+    padding: 0 10px;
+}
+
+.notice {
+    padding: 10px 0;
+    color: #EE514A;
+}
+
+#locationFound {
+    color: #72c4c0;
+    margin: 0 auto;
+    max-width: 275px;
+    text-align: left;
+    padding-left: 13px;
+}
+
+/* Loader */
+.loader {
+    font-size: 60px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    left: calc(50% - 32px);
+    margin: 0.8em auto;
+    position: fixed;
+    -webkit-animation: load6 1.7s infinite ease;
+    animation: load6 1.7s infinite ease;
+    display: none;
+    z-index: 2000;
+}
+@-webkit-keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    5%,
+    95% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    30% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.51em -0.66em 0 -0.42em #ffffff, -0.75em -0.36em 0 -0.44em #ffffff, -0.83em -0.03em 0 -0.46em #ffffff, -0.81em 0.21em 0 -0.477em #ffffff;
+    }
+    55% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.29em -0.78em 0 -0.42em #ffffff, -0.43em -0.72em 0 -0.44em #ffffff, -0.52em -0.65em 0 -0.46em #ffffff, -0.57em -0.61em 0 -0.477em #ffffff;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+}
+@keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    5%,
+    95% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+    30% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.51em -0.66em 0 -0.42em #ffffff, -0.75em -0.36em 0 -0.44em #ffffff, -0.83em -0.03em 0 -0.46em #ffffff, -0.81em 0.21em 0 -0.477em #ffffff;
+    }
+    55% {
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.29em -0.78em 0 -0.42em #ffffff, -0.43em -0.72em 0 -0.44em #ffffff, -0.52em -0.65em 0 -0.46em #ffffff, -0.57em -0.61em 0 -0.477em #ffffff;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: -0.11em -0.83em 0 -0.4em #ffffff, -0.11em -0.83em 0 -0.42em #ffffff, -0.11em -0.83em 0 -0.44em #ffffff, -0.11em -0.83em 0 -0.46em #ffffff, -0.11em -0.83em 0 -0.477em #ffffff;
+    }
+}
+.sweet-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+#dnd_interval_container {
+    display: none;
+    padding-top: 10px;
+}
+#dnd_interval_container input {
+    width: 100px;
+    margin: 3px;
+    display: inline !important;
+}
+#openweathermap_api_key_block input {
+    width: 290px;
+    margin: 3px;
+    display: inline !important;
+}
+#openweathermap_api_key_block {
+    display: none;
+}
+.error {
+    display: none;
+    color: #EE514A;
+}
+.has-error {
+    color: #EE514A;
+    border-color: #EE514A;
+}
+
+/* Color picker */
+.dropdown-menu {
+    min-width: 300px;
+    padding: 6px;
+    left: -90px;
+    background: rgb(41, 42, 46) none repeat scroll 0 0;
+    border-color: #eee;
+}
+.dropdown-menu .color-container {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    overflow: hidden;
+}
+.dropdown-menu .color-container.active {
+    border: 2px #fff solid;
+}
+.dropdown-menu .color-container .second-color {
+    height: 171px;
+    width: 171px;
+    display: block;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.dropdown-menu .color-container.active .second-color {
+    height: 158px;
+    width: 158px;
+}
+#screen_color .color-container .name {
+    color: rgb(41,42,46) !important;
+}
+
+.bright-green {
+    /*background-color: #55FF00 !important;*/
+    background-color: #c7ffab !important;
+}
+.bright-green .second-color {
+    background-color: #7dba5f !important;
+}
+.green {
+    /*background-color: #00FF00 !important;*/
+    background-color: #2bff99 !important;
+}
+.green .second-color {
+    background-color: #35a164 !important;
+}
+.screaming-green {
+    /*background-color: #55FF55 !important;*/
+    background-color: #b5ffc1 !important;
+}
+.screaming-green .second-color {
+    background-color: #86b886 !important;
+}
+.malachite {
+    /*background-color: #00FF55 !important;*/
+    background-color: #87ffaf !important;
+}
+.malachite .second-color {
+    background-color: #69c789 !important;
+}
+.islamic-green {
+    /*background-color: #00AA00 !important;*/
+    background-color: #5ab881 !important;
+}
+.islamic-green .second-color {
+    background-color: #44945c !important;
+}
+.jaeger-green {
+    /*background-color: #00AA55 !important;*/
+    background-color: #00b59e !important;
+}
+.jaeger-green .second-color {
+    background-color: #3d917c !important;
+}
+.medium-aquamarine {
+    /*background-color: #55FFAA !important;*/
+    background-color: #a1ffd0 !important;
+}
+.medium-aquamarine .second-color {
+    background-color: #87c9a8 !important;
+}
+.medium-spring-green {
+    /*background-color: #00FFAA !important;*/
+    background-color: #61ffca !important;
+}
+.medium-spring-green .second-color {
+    background-color: #27d1a7 !important;
+}
+.electric-blue {
+    /*background-color: #55FFFF !important;*/
+    background-color: #b0ffff !important;
+}
+.electric-blue .second-color {
+    background-color: #5dbaba !important;
+}
+.cyan {
+    /*background-color: #00FFFF !important;*/
+    background-color: #61ffff !important;
+}
+.cyan .second-color {
+    background-color: #33c4b8 !important;
+}
+.tiffany-blue {
+    /*background-color: #00AAAA !important;*/
+    background-color: #00b8b8 !important;
+}
+.tiffany-blue .second-color {
+    background-color: #44adad !important;
+}
+.cobalt-blue {
+    /*background-color: #0055AA !important;*/
+    background-color: #4a83bd !important;
+}
+.cobalt-blue .second-color {
+    background-color: #387896 !important;
+}
+.vivid-cerulean {
+    /*background-color: #00AAFF !important;*/
+    background-color: #37b6db !important;
+}
+.vivid-cerulean .second-color {
+    background-color: #24a3b3 !important;
+}
+.picton-blue {
+    /*background-color: #55AAFF !important;*/
+    background-color: #93bce6 !important;
+}
+.picton-blue .second-color {
+    background-color: #6da3bd !important;
+}
+.blue-moon {
+    /*background-color: #0055FF !important;*/
+    background-color: #3370c7 !important;
+}
+.blue-moon .second-color {
+    background-color: #307eb5 !important;
+}
+.electric-ultramarine {
+    /*background-color: #5500FF !important;*/
+    background-color: #9e6eff !important;
+}
+.electric-ultramarine .second-color {
+    background-color: #474fb0 !important;
+}
+.very-light-blue {
+    /*background-color: #5555FF !important;*/
+    background-color: #a8a8ff !important;
+}
+.very-light-blue .second-color {
+    background-color: #6c80b8 !important;
+}
+.liberty {
+    /*background-color: #5555AA !important;*/
+    background-color: #9e9edb !important;
+}
+.liberty .second-color {
+    background-color: #7281a3 !important;
+}
+.indigo-web {
+    /*background-color: #5500AA !important;*/
+    background-color: #9567ab !important;
+}
+.indigo-web .second-color {
+    background-color: #5d4a94 !important;
+}
+.vivid-violet {
+    /*background-color: #AA00FF !important;*/
+    background-color: #bc6bd6 !important;
+}
+.vivid-violet .second-color {
+    background-color: #805396 !important;
+}
+.lavender-indigo {
+    /*background-color: #AA55FF !important;*/
+    background-color: #d9adff !important;
+}
+.lavender-indigo .second-color {
+    background-color: #8e8cc2 !important;
+}
+.purpureus {
+    /*background-color: #AA55AA !important;*/
+    background-color: #ba82ba !important;
+}
+.purpureus .second-color {
+    background-color: #947e94 !important;
+}
+.purple {
+    /*background-color: #AA00AA !important;*/
+    background-color: #ba57ba !important;
+}
+.purple .second-color {
+    background-color: #804980 !important;
+}
+.fashion-magenta {
+    /*background-color: #FF00AA !important;*/
+    background-color: #e653b5 !important;
+}
+.fashion-magenta .second-color {
+    background-color: #9c4880 !important;
+}
+.magenta {
+    /*background-color: #FF00FF !important;*/
+    background-color: #e665e6 !important;
+}
+.magenta .second-color {
+    background-color: #a352a3 !important;
+}
+.shocking-pink-crayola {
+    /*background-color: #FF55FF !important;*/
+    background-color: #ff99ff !important;
+}
+.shocking-pink-crayola .second-color {
+    background-color: #c484c4 !important;
+}
+.brilliant-rose {
+    /*background-color: #FF55AA !important;*/
+    background-color: #ffa1d0 !important;
+}
+.brilliant-rose .second-color {
+    background-color: #cf8aac !important;
+}
+.folly {
+    /*background-color: #FF0055 !important;*/
+    background-color: #e6608d !important;
+}
+.folly .second-color {
+    background-color: #ab4668 !important;
+}
+.sunset-orange {
+    /*background-color: #FF5555 !important;*/
+    background-color: #ff9e9e !important;
+}
+.sunset-orange .second-color {
+    background-color: #ba7b7b !important;
+}
+.rose-vale {
+    /*background-color: #AA5555 !important;*/
+    background-color: #b587ae !important;
+}
+.rose-vale .second-color {
+    background-color: #947979 !important;
+}
+.windsor-tan {
+    /*background-color: #AA5500 !important;*/
+    background-color: #aa809a !important;
+}
+.windsor-tan .second-color {
+    background-color: #856f59 !important;
+}
+.red {
+    /*background-color: #FF0000 !important;*/
+    background-color: #d64583 !important;
+}
+.red .second-color {
+    background-color: #ad314e !important;
+}
+.orange {
+    /*background-color: #FF5500 !important;*/
+    background-color: #ff908f !important;
+}
+.orange .second-color {
+    background-color: #ab6846 !important;
+}
+.chrome-yellow {
+    /*background-color: #FFAA00 !important;*/
+    background-color: #ffbfb3 !important;
+}
+.chrome-yellow .second-color {
+    background-color: #b59a64 !important;
+}
+.rajah {
+    /*background-color: #FFAA55 !important;*/
+    background-color: #ffbdbd !important;
+}
+.rajah .second-color {
+    background-color: #bfa284 !important;
+}
+.icterine {
+    /*background-color: #FFFF55 !important;*/
+    background-color: #ffdad6 !important;
+}
+.icterine .second-color {
+    background-color: #c9c993 !important;
+}
+.yellow {
+    /*background-color: #FFFF00 !important;*/
+    background-color: #ffe5db !important;
+}
+.yellow .second-color {
+    background-color: #b8b876 !important;
+}
+.limerick {
+    /*background-color: #AAAA00 !important;*/
+    background-color: #d4bec2 !important;
+}
+.limerick .second-color {
+    background-color: #9e9e6d !important;
+}
